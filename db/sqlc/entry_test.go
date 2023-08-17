@@ -21,7 +21,7 @@ func createRandomEntry(t *testing.T, account Account) Entry {
 	require.Equal(t, args.AccountID, entry.AccountID)
 	require.Equal(t, args.Amount, entry.Amount)
 
-	require.NotZero(t, entry.AccountID)
+	require.NotZero(t, entry.ID)
 	require.NotZero(t, entry.CreatedAt)
 
 	paramUpdateAccount := UpdateAccountParams{
